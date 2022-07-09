@@ -1,0 +1,116 @@
+<div class="modals">
+	<!-- Несколько модальных окон -->
+
+	<div class="modal" data-modal="1">
+		<!--   Svg иконка для закрытия окна  -->
+		<svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+			<path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+		</svg>
+		<p class="modal__title">Авторизация</p>
+		<div class="modal__img">
+			<img src="@img/plug-avatar.png" alt="" />
+		</div>
+		<div class="modal__data">
+			<p>Войдите на Avito-Stat через любую социальную сеть:</p>
+			<div class="modal__social">
+				<img src="@img/inst.png" alt="" />
+				<img src="@img/twitter.png" alt="" />
+				<img src="@img/ok.png" alt="" />
+				<img src="@img/vk.png" alt="" />
+				<img src="@img/facebook.png" alt="" />
+			</div>
+		</div>
+		<div class="modal__bottom">
+			<p>
+				Авторизация на Avito-Stat нужна для того, чтобы вы могли подписываться и получать уведомления об изменении статистики. Мы не рассылаем рекламную информацию и не будем вас беспокоить.
+			</p>
+		</div>
+	</div>
+
+	<form class="modal" data-modal="2">
+		<!--   Svg иконка для закрытия окна  -->
+		<svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+			<path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+		</svg>
+		<p class="modal__title">Регистрация</p>
+		<div class="modal__img">
+			<img src="@img/avatar.png" alt="" />
+		</div>
+		<div class="modal__data">
+			<p>Вы зарегистрировались как <span>Захар Ржевский</span></p>
+			<div class="modal__input">
+				<label>Ваш E-mail: </label>
+				<input type="text" placeholder="zaharka@gmail.com" />
+			</div>
+		</div>
+		<div class="modal__bottom">
+			<div class="modal__btns">
+				<button type="submit" class="modal__btn modal__btn_blue">
+					<img src="@img/check.svg" alt="" />
+					ПОДТВЕРДИТЬ
+				</button>
+			</div>
+		</div>
+	</form>
+	<div class="modal" data-modal="3">
+		<!--   Svg иконка для закрытия окна  -->
+		<svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+			<path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+		</svg>
+		<p class="modal__title">Подтверждение действия</p>
+		<div class="modal__img">
+			<img src="@img/important.png" alt="" />
+		</div>
+		<div class="modal__data">
+			<p>
+				Вы действительно хотите удалить свой поиск: <br />
+				<br />
+				<span>Купить автомобиль Kia Soul</span> ?
+			</p>
+		</div>
+		<div class="modal__bottom">
+			<div class="modal__btns">
+				<button type="submit" class="modal__btn modal__btn_grey">
+					<img src="@img/check.svg" alt="" />
+					ПОДТВЕРДИТЬ
+				</button>
+				<button type="submit" class="modal__btn modal__btn_blue">
+					<img src="@img/delete.svg" alt="" />
+					отмена
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="modal" data-modal="4">
+		<!--   Svg иконка для закрытия окна  -->
+		<svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+			<path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+		</svg>
+		<p class="modal__title">Уведомление</p>
+		<div class="modal__img">
+			<img src="@img/check.png" alt="" />
+		</div>
+		<div class="modal__data">
+			<p>
+				Поиск <span>Купить автомобиль Kia Soul</span> добавлен в избранное! <br />
+				Для получения уведомлений нажмите на кнопку ниже.
+			</p>
+			<button type="submit" class="modal__data_btn">
+				Получать уведомления
+
+				<i class="_icon-logout"></i>
+			</button>
+		</div>
+		<div class="modal__bottom">
+			<div class="modal__btns">
+				<button type="submit" class="modal__btn modal__btn_blue">
+					<img src="@img/delete.svg" alt="" />
+					закрыть
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- Подложка под модальным окном -->
+	<div class="overlay" id="overlay-modal"></div>
+</div>

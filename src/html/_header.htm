@@ -1,5 +1,60 @@
-<header class="header">
-	<div class="header__container">
-
+<header class="header" id="top">
+	<div class="header__top">
+		<div class="header__menu menu">
+			<div class="header__btns">
+				<button type="button" class="search search-icon"><i class="_icon-search"></i></button>
+				<div class="menu__icon_wrapper">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+			<nav class="menu__body">
+				<ul class="menu__list">
+					<li class="menu__item"><a href="/" class="menu__link">Главная</a></li>
+					<li class="menu__item"><a href="./all-search.html" class="menu__link">Поиски</a></li>
+					<li class="menu__item"><a href="./article.html" class="menu__link">Статьи</a></li>
+				</ul>
+			</nav>
+		</div>
+		<a href="/" class="header__logo"><img src="../img/logo.svg" alt="" /></a>
+		<nav class="menu__body">
+			<ul class="menu__list">
+				<li class="menu__item">
+					<a href="#" class="menu__link"><img src="@img/plug-avatar.png" alt="" /> ЛИЧНЫЙ КАБИНЕТ</a>
+				</li>
+				<li class="menu__item"><a href="./ads.html" class="menu__link">ОБРАТНАЯ СВЯЗЬ</a></li>
+			</ul>
+		</nav>
 	</div>
+	<div class="header__bottom">
+		<div class="header__container">
+			<div class="header__search" data-da=".search-top, 768">
+				<input type="text" class="header__search_input" placeholder="* Вставьте ссылку на Avito" name="search" id="search" />
+				<button class="header__search_btn" type="submit">
+					<p>ПОИСК</p>
+					<i class="_icon-search"></i>
+				</button>
+			</div>
+		</div>
+	</div>
+	<nav class="mobile-menu_nav mobile-menu">
+		<div class="mobile-menu_top">
+			<p class="mobile-menu_top_title">Меню</p>
+		</div>
+		<ul class="mobile-menu_items">
+			<li class="mobile-menu_item active"><a href="/" class="mobile-menu_link">Главная</a></li>
+			<li class="mobile-menu_item"><a href="./all-search.html" class="mobile-menu_link">Поиски</a></li>
+			<li class="mobile-menu_item"><a href="./article.html" class="mobile-menu_link">Статьи</a></li>
+			<li class="mobile-menu_item"><a href="./ads.html" class="mobile-menu_link">Обратная связь</a></li>
+		</ul>
+		<div class="mobile-menu_account">
+			<div class="mobile-menu_account_data">
+				<img src="@img/avatar.png" alt="" />
+				<p>Захар Ржевский</p>
+			</div>
+			<div class="mobile-menu_account_close"><i class="_icon-close"></i></div>
+		</div>
+	</nav>
+	<nav class="mobile-menu_search mobile-menu">
+		<div class="mobile-menu_top search-top"></div>
+	</nav>
 </header>

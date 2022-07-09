@@ -1,3 +1,26 @@
 //====================================================================================================
-
+// footer
 //====================================================================================================
+.footer {
+	// .footer__inner
+
+	&__inner {
+	}
+
+	// .footer__bottom
+
+	&__bottom {
+		display: flex;
+		padding: 12px 0;
+		justify-content: center;
+		align-items: center;
+		background-color: #5cb6f3;
+		color: #f8f9fa;
+		font-size: rem(12);
+		font-family: "Work Sans", sans-serif;
+		font-weight: 400;
+		@media (max-width: $mobile) {
+			text-align: center;
+		}
+	}
+}

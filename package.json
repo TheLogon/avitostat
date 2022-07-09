@@ -12,8 +12,8 @@
 		"build": "gulp build --build",
 		"sprite": "gulp sprite",
 		"fonts": "gulp fonts --rewrite",
-		"deploy": "gulp deployFTP --build",
-		"zip": "gulp deployZIP --build",
+		"deploy": "gulp deployFTP --build --nowebp",
+		"zip": "gulp deployZIP --build --nowebp",
 		"devbuild": "gulp build --build --nowebp",
 		"tmp": "gulp -f gulpfile.tmp.js"
 	},

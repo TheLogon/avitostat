@@ -1,10 +1,10 @@
 // Получаем имя папки проекта
-import * as nodePath from 'path';
-const rootFolder = nodePath.basename(nodePath.resolve());
+import * as nodePath from "path"
+const rootFolder = nodePath.basename(nodePath.resolve())
 
 // Пути к папке с исходниками и папке с результатом
-const buildFolder = `./dist`; // Также можно использовать rootFolder
-const srcFolder = `./src`;
+const buildFolder = `./dist` // Также можно использовать rootFolder
+const srcFolder = `./src`
 
 // Пути к папкам и файлам проекта
 export const path = {
@@ -14,7 +14,7 @@ export const path = {
 		css: `${buildFolder}/css/`,
 		images: `${buildFolder}/img/`,
 		fonts: `${buildFolder}/fonts/`,
-		files: `${buildFolder}/files/`
+		files: `${buildFolder}/files/`,
 	},
 	src: {
 		html: `${srcFolder}/*.html`,
@@ -31,13 +31,13 @@ export const path = {
 	buildFolder: buildFolder,
 	rootFolder: rootFolder,
 	srcFolder: srcFolder,
-	ftp: `` // Путь к нужной папке на удаленном сервере. gulp добавит имя папки проекта автоматически
-};
+	ftp: `/public_html/lgn-guru.online`, // Путь к нужной папке на удаленном сервере. gulp добавит имя папки проекта автоматически
+}
 
 // Настройка FTP соединения
 export const configFTP = {
-	host: "", // Адрес FTP сервера
-	user: "", // Имя пользователя
-	password: "", // Пароль
-	parallel: 5 // Кол-во одновременных потоков
+	host: "lgn-guru.online", // Адрес FTP сервера
+	user: "admin@lgn-guru.online", // Имя пользователя
+	password: "Kirillpe0524", // Пароль
+	parallel: 5, // Кол-во одновременных потоков
 }
